@@ -90,6 +90,11 @@ nav .right a:last-child:hover{
         ) 
         1;
     
+    height: 100vh;      /* full viewport height */
+    align-items: center; /* center vertically */
+    justify-content: center; /* center horizontally */
+    flex-direction: column;  /* stack text vertically */
+    margin: 0; /* override existing margin so it fills full height */
 }
 
 .hero-section .group{
@@ -158,15 +163,6 @@ nav .right a:last-child:hover{
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
-}
-
-/* Make Hero section full viewport height and center content */
-.hero-section {
-    height: 100vh;      /* full viewport height */
-    align-items: center; /* center vertically */
-    justify-content: center; /* center horizontally */
-    flex-direction: column;  /* stack text vertically */
-    margin: 0; /* override existing margin so it fills full height */
 }
 
 
