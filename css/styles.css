@@ -156,14 +156,6 @@ nav .mobile-nav {
     flex-direction: column;    /* stack content vertically */
     min-height: 100vh;         /* make section fill the whole screen */
     text-align: center;        /* center the text */
-
-    border: 2px solid var(--border-color);
-    border-image: linear-gradient(
-        45deg, var(--border-color) 1%, transparent 1%, transparent 99%, var(--border-color) 99%
-        ) 
-        1;
-    border-image-slice: 1;
-    
 }
 
 .hero-section .group {
