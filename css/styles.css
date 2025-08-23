@@ -947,3 +947,7 @@ footer p {
       
 }
 
+/* Push projects section down */
+#projects {
+  margin-top: 100vh; /* one screen height */
+}
