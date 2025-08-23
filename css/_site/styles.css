@@ -149,9 +149,13 @@ nav .mobile-nav {
 /* SECTION 1: Hero */
 .hero-section {
     padding: 0 50px;
-    margin: 50px 0;
+    margin: 0;
     display: flex;  /* This makes .hero-section a flex container */
-
+    justify-content: center;   /* centers vertically */
+    align-items: center;       /* centers horizontally */
+    flex-direction: column;    /* stack content vertically */
+    min-height: 100vh;         /* make section fill the whole screen */
+    text-align: center;        /* center the text */
 
 }
 
