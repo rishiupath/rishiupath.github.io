@@ -40,7 +40,7 @@ h1 {
 }
 h2 {
     color: var(--text-color);
-    font-size: calc(14px + 0.8vw);
+    font-size: calc(11px + 0.8vw);
 }
 h3 {
     font-weight: normal;
@@ -172,7 +172,7 @@ nav .mobile-nav {
 }
 
 .hero-section .text h2 {
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .hero-section .text .external-links i {
@@ -182,7 +182,7 @@ nav .mobile-nav {
 }
 
 .hero-section .text h3 {
-    font-size: 18px;
+    font-size: 38px;
     color: var(--text-color);
 }
 
