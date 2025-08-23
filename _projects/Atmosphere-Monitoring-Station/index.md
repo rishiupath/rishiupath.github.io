@@ -8,7 +8,7 @@ skills:
   - STM32CubeIDE 
   - I2C protocol
 
-main-image: /3Dpcb.png
+main-image: /3Dpcb_title.png
 ---
 
 ## Schematic Creation and Component Selection 
