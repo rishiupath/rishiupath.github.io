@@ -32,7 +32,7 @@ resume-url: /assets/resume/RishiUpath_Resume.pdf
 
 external-links:    # input only your own url slug. The icons with missing entries will not appear.
   linkedin: rishi-upath #https://www.linkedin.com/in/rishi-upath
-  github: rishiupath #https://github.com/rishiupath
+  github:  #https://github.com/rishiupath
   stackoverflow: # https://stackoverflow.com/users/{your url slug}
   medium:            # https://medium.com/@{your url slug} 
   x-twitter:   # https://x.com/{your url slug} 
