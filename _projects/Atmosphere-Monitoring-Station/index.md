@@ -11,10 +11,8 @@ skills:
 main-image: /3Dpcb.png
 ---
 
-# 
-Schematic Creation and Component Selection 
+# Schematic Creation and Component Selection 
 
-{% include image-gallery.html images="project2.jpg" height="400" %} 
+{% include image-gallery.html images="Schem_mcu, Schem_modules, Schem_power" height="400" %} 
 
-###
-I took care to make sure components selected were compabitble and in stock with my chosen manufacturer. Thoroughly read data sheets for proper connections.
+### I took care to make sure components selected were compabitble and in stock with my chosen manufacturer. Thoroughly read data sheets for proper connections.
