@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Atmosphrtr Monitoring Station
-description: This is a custom 4-layer PCB created in Altium designer. It has a STM32 microcontroller, temperature/humidity sensor, ambient light sensor, GPIO pin header, and dual power input (USB and battery). 
+description: Designed, manufactured, and programmed a custom 4-layer PCB for an atmospheric monitoring station capable of measuring temperature, humidity, and air pressure. The board integrates multiple sensors via I²C, providing accurate environmental data collection. 
 skills: 
   - Altium Designer
   - C programming
