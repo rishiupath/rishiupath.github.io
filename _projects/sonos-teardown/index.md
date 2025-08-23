@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Sonos Teardown
-description: Conducted detailed teardown analysis of Sonos Era speaker, documenting internal components, driver configuration, and PCB design. Created technical documentation with photos and assembly insights for engineering reference. 
+title: Atmosphrtr Monitoring Station
+description: This is a custom 4-layer PCB created in Altium designer. It has a STM32 microcontroller, temperature/humidity sensor, ambient light sensor, GPIO pin header, and dual power input (USB and battery). 
 skills: 
-  - drumel
-  - microprobing
-  - Electronics Teardown
-  - PCB analysis
-  - audio system design
+  - Altium Designer
+  - C programming
+  - STM32CubeIDE 
+  - I2C protocol
 
 main-image: /sonos.png
 ---
