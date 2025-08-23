@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Atmoshpere Monitoring Station
-description:  short description of the project
+description: Designed, manufactured, and programmed a custom 4-layer PCB for an atmospheric monitoring station capable of measuring temperature, humidity, and air pressure. The board integrates multiple sensors via I²C, providing accurate environmental data collection. 
 skills: 
-- skill 1
-- skill 2
-main-image: /project.webp 
+  - Altium Designer
+  - C programming
+  - STM32CubeIDE 
+  - I2C protocol
+
+main-image: /3Dpcb.png
 ---
