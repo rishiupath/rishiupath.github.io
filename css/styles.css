@@ -951,3 +951,12 @@ footer p {
 #projects {
   margin-top: 100vh; /* one screen height */
 }
+
+.hero-section {
+  display: flex;
+  justify-content: center;   /* vertically center */
+  align-items: center;       /* horizontally center */
+  flex-direction: column;    /* stack text */
+  min-height: 100vh;         /* fill the screen height */
+  text-align: center;        /* center text inside */
+}
