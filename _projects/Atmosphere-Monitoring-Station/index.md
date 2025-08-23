@@ -28,3 +28,8 @@ Power components are generally placed on the bottom right to avoid noise interfe
 {% include image-gallery.html images="3Dpcb.png" height="400" %} 
 
 Labelled everything for easy of use, +/- indicators, button functions, main components for debugging. Included LED indicators for USB power and battery power. 
+
+##Programming 
+
+Used STM32CubeIDE to configure device and program sensors using HAL library fufnctions for I2C. Setup USB as virtual COM port to send sensor readings as strings through USB and display on computer.
+
