@@ -953,5 +953,5 @@ footer p {
 
 /* Push projects section down */
 #projects {
-  margin-top: 100vh; /* one screen height */
+  margin-top: 60vh; /* one screen height */
 }
