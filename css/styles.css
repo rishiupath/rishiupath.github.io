@@ -162,6 +162,7 @@ nav .mobile-nav {
         45deg, var(--border-color) 1%, transparent 1%, transparent 99%, var(--border-color) 99%
         ) 
         1;
+    border-image-slice: 1;
     
 }
 
