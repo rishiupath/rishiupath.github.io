@@ -154,7 +154,7 @@ nav .mobile-nav {
     justify-content: center;   /* centers vertically */
     align-items: center;       /* centers horizontally */
     flex-direction: column;    /* stack content vertically */
-    min-height: 30vh;         /* make section fill the whole screen */
+    min-height: 50vh;         /* make section fill the whole screen */
     text-align: center;        /* center the text */
 }
 
