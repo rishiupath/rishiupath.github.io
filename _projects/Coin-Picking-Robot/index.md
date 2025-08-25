@@ -39,6 +39,6 @@ Checkout the projects YouTube video and report!
 
 {% include youtube-video.html id="fnM59C7P06g" autoplay = "false" width= "900px" %}  
 
-[Report]([https://en.wikipedia.org](https://drive.google.com/file/d/101rXCqt_ncftTJQcAkzx5_E8U2eXSJqr/view?usp=sharing))
+[Report](https://drive.google.com/file/d/101rXCqt_ncftTJQcAkzx5_E8U2eXSJqr/view?usp=sharing))
 
 
