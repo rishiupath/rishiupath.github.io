@@ -43,6 +43,4 @@ Checkout the projects YouTube video and report!
 
 {% include youtube-video.html id="fnM59C7P06g" autoplay = "false" width= "900px" %}  
 
-[Report](https://drive.google.com/file/d/101rXCqt_ncftTJQcAkzx5_E8U2eXSJqr/view?usp=sharing)
-
-<a href="https://drive.google.com/file/d/101rXCqt_ncftTJQcAkzx5_E8U2eXSJqr/view?usp=sharing" target="_blank" class="button">View PDF</a>
+<a href="https://drive.google.com/file/d/101rXCqt_ncftTJQcAkzx5_E8U2eXSJqr/view?usp=sharing" target="_blank" class="button">View Report</a>
