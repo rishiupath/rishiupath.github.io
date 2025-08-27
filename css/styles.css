@@ -952,8 +952,8 @@ footer p {
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #1abc9c;  /* bright teal for contrast */
-  color: #000000;             /* black text for readability on bright button */
+  background-color: #333333;   /* dark gray button */
+  color: #e0e0e0;              /* light gray text for contrast */
   font-weight: bold;
   border-radius: 8px;
   text-decoration: none;
@@ -961,6 +961,6 @@ footer p {
 }
 
 .button:hover {
-  background-color: #16a085;  /* darker teal on hover */
+  background-color: #555555;   /* slightly lighter gray on hover */
   color: #ffffff;             /* optional: switch text to white on hover */
 }
