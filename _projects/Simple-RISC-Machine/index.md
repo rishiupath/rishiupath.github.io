@@ -19,4 +19,4 @@ Here's an overview of the main modules of the RISC machine.
 
 ## Checkout the project on GitHub
 
-<a href="https://drive.google.com/file/d/101rXCqt_ncftTJQcAkzx5_E8U2eXSJqr/view?usp=sharing](https://github.com/rishiupath/RISC-machine" target="_blank" class="button">GitHub</a>
+<a href="https://github.com/rishiupath/RISC-machine" target="_blank" class="button">GitHub</a>
