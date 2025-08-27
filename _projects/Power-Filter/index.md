@@ -18,6 +18,13 @@ main-image: /3Dfilter.png
 - Opted for a simple passive design with no active power required.
 - Used thick copper traces and mechanical mounting holes for stability when mounted on rover
 
+<ul style="color: #e0e0e0;">
+  <li>Designed passive RLC low-pass filter to suppress high-frequency noise from motors and switching regulators</li>
+  <li>Selected components rated for 12–24 V and 1–2 A operation</li>
+  <li>Opted for a simple passive design with no active power required.</li>
+  <li>Used thick copper traces and mechanical mounting holes for stability when mounted on rover</li>
+</ul>
+
 ## Verification 
 
 {% include image-gallery.html images="Spicefilter.png" height="400" %} 
