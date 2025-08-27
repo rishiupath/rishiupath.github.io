@@ -1,16 +1,22 @@
 ---
 layout: post
 title: Simple RISC Machine
-description:  (I have never been employed by / affiliated with SpaceX. This is for demo use only) 
-    Developing the Super Heavy booster catch project involves designing a robust launch tower with "chopstick" arms, advanced control systems for precise booster alignment, and integrating sophisticated software for real-time trajectory adjustments and structural engineering to handle immense forces.
+description: Designed Reduced Instruction Set Computer with integrated memory and I/O functionality, capable of executing ARM instructions, on DE1-Soc using Quartus and SystemVerilog. This was a team project done in a group of 2. 
 skills: 
-  - Structural analysis
-  - Aerodynamic design
-  - Propulsion system integration
-  - Control Algorithem 
-  - Welding
-  - Metal forming
-  - Thermal simulation
+  - System Verilog
+  - Quartus
+  - ModelSim
+  - FPGA
 
-main-image: /project2.jpg
+main-image: /RISCblock.png
 ---
+
+## Block Diagram
+
+{% include image-gallery.html images="RISCblock.png" height="400" %}
+<span style="font-size: 10px">Image from CPEN 211 course materials at UBC.</span>  
+Here's an overview of the main modules of the RISC machine. 
+
+## Checkout the projects GitHub
+
+<a href="https://drive.google.com/file/d/101rXCqt_ncftTJQcAkzx5_E8U2eXSJqr/view?usp=sharing](https://github.com/rishiupath/RISC-machine" target="_blank" class="button">GitHub</a>
