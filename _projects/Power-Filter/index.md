@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Power Filter PCB
-description: Designed low-pass filter for sensitive modules on rover to protect them from noise from the power distribution network. 
+description: Designed a low-pass RLC filter PCB to protect sensitive rover modules from noise in the power distribution network.
 skills: 
   - Altium Designer
   - Filters
+  - Circuit simulation
 main-image: /3Dfilter.png
 ---
 
@@ -13,15 +14,16 @@ main-image: /3Dfilter.png
 {% include image-gallery.html images="Schemfilter.png, Layoutfilter.png" height="400" %} 
 
 Component Selection: high power capabilities needed, componenets needed to handle 12-24V and 1-2A
-- Simple solution, no active power for device needed
-- large thick traces used
-- mounting holes for mechanical stability and fixing
+-Designed passive RLC low-pass filter to suppress high-frequency noise from motors and switching regulators 
+-Selected components rated for 12–24 V and 1–2 A operation
+-Opted for a simple passive design with no active power required.
+-Used thick copper traces and mechanical mounting holes for stability when mounted on rover
 
 ## Verification 
 
 {% include image-gallery.html images="Spicefilter.png, Layoutfilter.png" height="400" %} 
 
-Verified filter cutoff frequency on LTspice, and figured out ideal component values
-
+-Performed AC small-signal analysis in LTspice to verify the filter cutoff frequency (~10 kHz) and adjust component values for optimal attenuation
+-Ensured the filter attenuates high-frequency noise while maintaining stable DC voltage for downstream electronics
 
 
