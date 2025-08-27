@@ -17,6 +17,6 @@ main-image: /RISCblock.png
 <span style="font-size: 10px">Image from CPEN 211 course materials at UBC.</span>  
 Here's an overview of the main modules of the RISC machine. 
 
-## Checkout the projects GitHub
+## Checkout the project on GitHub
 
 <a href="https://drive.google.com/file/d/101rXCqt_ncftTJQcAkzx5_E8U2eXSJqr/view?usp=sharing](https://github.com/rishiupath/RISC-machine" target="_blank" class="button">GitHub</a>
