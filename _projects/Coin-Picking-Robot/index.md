@@ -19,6 +19,7 @@ The main modules of the robot circuitry include:
 <ul style="color: #e0e0e0; line-height: 1.6; font-size: 16px;">
   <li>Optocouplers used to isolate sensitive components (microcontroller, sensors) from noisy loads (motors, electromagnet)</li>
   <li>H-bridge transistor circuits implemented for reliable motor control</li>
+  <li>JDY-40 for manual remote control</li>
   <li>Battery-powered power distribution with regulated 3.3 V and 5 V rails and seperate battery power for motors and electromagnet</li>
   <li>System controlled by EFM8 microcontroller</li>
 </ul>
