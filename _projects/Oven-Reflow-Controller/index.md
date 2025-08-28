@@ -35,7 +35,7 @@ This board's SMD components were soldered using the reflow controller!
 ## Project Showcase
 Checkout the project's video and report. 
 
-{% include youtube-video.html id="5nsnfEk_kys&t=231s" autoplay = "false" width= "900px" %}  
+{% include youtube-video.html id="5nsnfEk_kys" start="231" autoplay="false" width="900px" %}
 
 <a href="https://drive.google.com/file/d/1Wx4ZJ4D98804qQDofn3fygVI0V8VEnXP/view?usp=sharing" target="_blank" class="button">View Report</a>
 
