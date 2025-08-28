@@ -39,7 +39,7 @@ As a bonus feature to the project, I added an ultrasonic sensor to the  robot to
 
 ## Project Showcase 
 
-Checkout the projects YouTube video and report!
+Checkout the project's video and report!
 
 {% include youtube-video.html id="fnM59C7P06g" autoplay = "false" width= "900px" %}  
 
