@@ -28,7 +28,7 @@ The different states of the reflow process are shown here. PREHEAT, SOAK, RAMP T
 
 ## Results
 
-{% include image-gallery.html images="Reflowboard.jpg" height="400" %} 
+{% include image-gallery.html images="Reflowefm8.jpg" height="400" %} 
 
 This board's SMD components were soldered using the reflow controller!
 
