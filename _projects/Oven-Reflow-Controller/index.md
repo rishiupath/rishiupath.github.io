@@ -22,7 +22,7 @@ main-image: /Reflowboard.jpg
 
 ## Reflow Profile 
 
-{% include image-gallery.html images="Reflowprofile.jpg" height="400" %} 
+{% include image-gallery.html images="Reflowprofile.png" height="400" %} 
 
 The different states of the reflow process are shown here. PREHEAT, SOAK, RAMP TO PEAK, REFLOW, COOL.
 
