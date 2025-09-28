@@ -52,7 +52,7 @@ main-image:
 
 ## Main features 
 <ul style="color: #e0e0e0; line-height: 1.6; font-size: 16px;">
-  <li>Designed and synthesized digital datapath and finite state machine controller to implement Baccarat gamE engine on DE1-Soc FPGA using Quartus and SystemVerilog</li>
+  <li>Designed and synthesized digital datapath and finite state machine controller to implement Baccarat game engine on DE1-Soc FPGA using Quartus and SystemVerilog</li>
   <li>Controlled game cards using push buttons, LED’s, and 7-sgement display while keeping track of score and player hands using registers</li>
   <li>Built hierarchal modules and wrote extensive ModelSim test benches for RTL and post-synthesis to verify functionality, specifically testing edge cases</li>
 </ul>
