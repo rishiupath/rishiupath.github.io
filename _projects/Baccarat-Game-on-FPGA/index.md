@@ -59,4 +59,5 @@ main-image:
 
 ## Project Demo 
 
-This project is currently in progress, a demo will be posted soon!
+<iframe src="https://drive.google.com/file/d/1bhns0-bulK6TT5thMRLraTc1YyPzXWgW/view?usp=drive_link" 
+        width="640" height="360" allow="autoplay"></iframe>
