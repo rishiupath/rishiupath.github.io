@@ -59,5 +59,5 @@ main-image:
 
 ## Project Demo 
 
-<iframe src="https://drive.google.com/file/d/1bhns0-bulK6TT5thMRLraTc1YyPzXWgW/view?usp=drive_link" 
+<iframe src="https://drive.google.com/file/d/1bhns0-bulK6TT5thMRLraTc1YyPzXWgW/view" 
         width="640" height="360" allow="autoplay"></iframe>
