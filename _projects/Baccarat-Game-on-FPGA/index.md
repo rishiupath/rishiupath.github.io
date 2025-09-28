@@ -8,7 +8,7 @@ skills:
   - ModelSim
   - SystemVerilog
 
-main-image: 
+main-image: /BaccaratDemoImage.png
 ---
 ## Game Rules
 <ul style="color: #e0e0e0; line-height: 1.6; font-size: 16px;">
@@ -62,5 +62,5 @@ main-image:
 {% include image-gallery.html images="BaccaratDemoImage.png" height="400" %}
 
 {% include image-gallery.html images="BaccaratDemoVid.mov" height="400" %}
-<iframe src="https://drive.google.com/file/d/1bhns0-bulK6TT5thMRLraTc1YyPzXWgW/view" 
+<iframe src="https://drive.google.com/file/d/1bhns0-bulK6TT5thMRLraTc1YyPzXWgW/preview" 
         width="640" height="360" allow="autoplay"></iframe>
