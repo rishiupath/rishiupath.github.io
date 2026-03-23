@@ -15,9 +15,11 @@ main-image: /3Dpcb_title.png
 
 {% include image-gallery.html images="Schem_mcu.png, Schem_modules.png, Schem_power.png" height="400" %} 
 
-The current sensing capability is based on the Kelvin (4-wire) resistance measurement method. This method separates the measurement path from the current-carrying path, reducing voltage loss in the sensing circuit. Large copper pours were used to further minimize voltage loss in the current path.  
+The current sensing capability is based on the Kelvin (4-wire) resistance measurement method. This method separates the measurement path from the current-carrying path, reducing voltage loss in the sensing circuit. Additionaly a low-pass RC filter is used to filter out any high frequency noise coming from the power supply. Large copper pours were used to further minimize voltage loss in the current path.  
 
 Mechanical stability was considered by adding holes to secure the cable to the board with zip ties. Additional pads were included to measure USB voltage and to easily probe the true value of the resistor.
+
+
 
 ## Manufacturing
 
