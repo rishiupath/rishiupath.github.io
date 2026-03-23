@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Atmosphere Monitoring Station
-description: Designed, manufactured, and programmed a custom 4-layer PCB for an atmospheric monitoring station capable of measuring temperature, humidity, and ambient light. The board integrates multiple sensors via I²C, providing accurate environmental data collection. 
+description: Designed and programmed a custom 4-layer PCB for an atmospheric monitoring station capable of measuring temperature, humidity, and ambient light. The board integrates multiple sensors via I²C, providing accurate environmental data collection. 
 skills: 
   - Altium Designer
   - C programming
