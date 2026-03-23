@@ -1,46 +1,43 @@
 ---
 layout: post
-title: Atmosphere Monitoring Station
-description: Designed, manufactured, and programmed a custom 4-layer PCB for an atmospheric monitoring station capable of measuring temperature, humidity, and ambient light. The board integrates multiple sensors via I²C, providing accurate environmental data collection. 
+title: USB Current Monitor
+description: Designed and manufactured a USB cable monitoring board that enables logging USB current and voltage using an external power analyzer. 
 skills: 
   - Altium Designer
-  - C programming
-  - STM32CubeIDE 
-  - I2C protocol
+  - LPKF Protomat Circuit Board Plotter
+  - Circuit Pro
+  - Soldering (wires, SMD components)
 
 main-image: /3Dpcb_title.png
 ---
 
-## Schematic Creation and Component Selection 
+## Design
 
 {% include image-gallery.html images="Schem_mcu.png, Schem_modules.png, Schem_power.png" height="400" %} 
 
+The current sensing capability is based on the Kelvin (4-wire) resistance measurement method. This method separates the measurement path from the current-carrying path, reducing voltage loss in the sensing circuit. Large copper pours were used to further minimize voltage loss in the current path.  
 
-I carefully selected components to ensure compatibility with the microcontroller, communication protocols, and power supply requirements, while also confirming availability through my chosen manufacturer. Datasheets were thoroughly reviewed to verify pinouts, voltage ranges, and recommended application notes. 
+Mechanical stability was considered by adding holes to secure the cable to the board with zip ties. Additional pads were included to measure USB voltage and to easily probe the true value of the resistor.
 
-The schematics were organized neatly into functional blocks (sensors, power regulation, SWD, MCU, and connectors) to improve readability. I also made sure to label all nets and ports with informative labels, this helped greatly for component placing and routing.
-
-## Component Placement and Routing
+## Manufacturing
 
 {% include image-gallery.html images="Trace.png, GroundPlane.png" height="400" %} 
 
+**Highlights:**
+- Independently manufactured the board using an LPKF Protomat circuit board plotter  
+- Developed an understanding of the PCB manufacturing process and how Gerber files translate to the physical board, informing future design decisions  
 
-Components were strategically placed to minimize noise and optimize signal integrity. Regulator circuitry was located in the bottom-right section of the board to isolate noise from sensitive sensor components. Signal traces for the sensors were routed away from the external oscillator and voltage regulators to further reduce interference.
+## Resistor Calibration
 
-Power distribution was handled with wide polygon pours and thicker traces, while thinner traces were used for low-current signal lines. USB data lines were routed as 90-ohm differential pairs to maintain proper impedance. Vias and the bottom layer were used where necessary to relieve routing congestion, while the middle layers were dedicated copper pours for ground and 3.3 V. These planes provided strong return paths and significantly simplified routing.
+**Process:**
+- Measured the resistance of each resistor by applying a ramp current and plotting voltage versus current  
+- Determined the resistance from the slope of the best-fit line to obtain an accurate average value  
 
-## Board Features
+## Final Product
 
 {% include image-gallery.html images="3Dpcb.png" height="400" %} 
 
-
-To improve usability and debugging, the board includes clear silkscreen labels for all major components, signal connections, and button functions. Care was taken to ensure the silkscreen is legible and does not overlap with any vias. Polarity indicators were added for screw terminals to prevent wiring mistakes, and labels were placed near power connectors and headers for quick identification.
-
-LED indicators provide immediate feedback for USB power and battery power status, while a dedicated switch allows easy source selection. Physical placement of connectors was carefully considered during the design phase. Power inputs (USB and battery) were placed on the right side of the board, while GPIO pins and their associated 3.3 V and 5 V screw terminals were grouped together on the same edge to improve accessibility. The reset and BOOT0 buttons were intentionally positioned side by side, making it simple to run boot sequences when flashing firmware. These decisions enhance the user experience and make the board intuitive to use, especially during testing and troubleshooting.
-
-## Programming 
-
-{% include image-gallery.html images="SerialData.png" height="400" %} 
-
-
-The firmware was developed in STM32CubeIDE using the HAL libraries to configure the microcontroller peripherals. The sensor datasheets were used to determine I²C protocol, specifically which adresses to configure and communicate with to receive data. This sensor communication was handled through HAL functions like: HAL_I2C_Mem_Write(), HAL_I2C_Master_Transmit(), and HAL_I2C_Master_Receive(). USB was configured as a virtual COM port allowing the board to stream sensor readings as formatted strings directly to a computer terminal. This provided a simple and effective way to verify sensor functionality and see data. 
+**Highlights:**
+- Added wires to easily connect the board to a lab power analyzer, following best practices (used different lengths for power and ground wires to prevent accidental shorts)  
+- Installed SMD components and wires using a soldering iron and heat gun  
+- Added clear labels for usability and organization  
