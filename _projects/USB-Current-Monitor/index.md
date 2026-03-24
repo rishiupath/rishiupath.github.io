@@ -29,6 +29,7 @@ I independently manufactured the board using an LPKF Protomat circuit board plot
 
 To assemble the components, I used a soldering iron and heat gun...
 
+<iframe src="https://drive.google.com/file/d/1PQRJObD1RQtk5_p99KKtV14KKnC7CuuY/preview" width="640" height="480"></iframe>
 
 ## Resistor Calibration
 {% include image-gallery.html images="USB_Current_Monitor_plot.png" height="400" %} 
