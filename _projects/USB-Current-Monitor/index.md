@@ -1,14 +1,14 @@
 ---
 layout: post
 title: USB Current Monitor
-description: Designed and manufactured a USB cable monitoring board that enables logging USB current and voltage using an external power analyzer. 
+description: Designed and manufactured a USB cable monitoring board that enables logging USB current and voltage using an external power analyzer. I created this for testing USB-C electronic devices during my time as a hardware engineer co-op at NETGEAR.
 skills: 
   - Altium Designer
   - LPKF Protomat Circuit Board Plotter
   - Circuit Pro
   - Soldering (wires, SMD components)
 
-main-image: /3Dpcb_title.png
+main-image: /USB_Current.png
 ---
 
 ## Design
