@@ -13,7 +13,7 @@ main-image: /USB_Current_Monitor_realbot.jpg
 
 ## Design
 
-{% include image-gallery.html images="USB_Current_Monitor_Schematic.png, USB_Current_Monitor_pcb.png, USB_Current_Monitor_3d_bot.png, USB_Current_Monitor_3d_top.png" height="400" %} 
+{% include image-gallery.html images="USB_Current_Sensor_Schematic.png, USB_Current_Sensor_pcb.png, USB_Current_Sensor_3d_bot.png, USB_Current_Sensor_3d_top.png" height="400" %} 
 
 The current sensing capability is based on the Kelvin (4-wire) resistance measurement method. This method separates the measurement path from the current-carrying path, reducing voltage loss in the sensing circuit. Additionaly a low-pass RC filter is used to filter out any high frequency noise coming from the power supply. Large copper pours were used to further minimize voltage loss in the current path.  
 
