@@ -8,12 +8,12 @@ skills:
   - Circuit Pro
   - Soldering (wires, SMD components)
 
-main-image: /USB_Current.png
+main-image: /USB_Current_Monitor_realbot.png
 ---
 
 ## Design
 
-{% include image-gallery.html images="Schem_mcu.png, Schem_modules.png, Schem_power.png" height="400" %} 
+{% include image-gallery.html images="USB_Current_Monitor_Schematic.png, USB_Current_Monitor_3d_pcb.png, USB_Current_Monitor_3d_bot.png, USB_Current_Monitor_3d_top.png" height="400" %} 
 
 The current sensing capability is based on the Kelvin (4-wire) resistance measurement method. This method separates the measurement path from the current-carrying path, reducing voltage loss in the sensing circuit. Additionaly a low-pass RC filter is used to filter out any high frequency noise coming from the power supply. Large copper pours were used to further minimize voltage loss in the current path.  
 
@@ -23,7 +23,7 @@ Mechanical stability was considered by adding holes to secure the cable to the b
 
 ## Manufacturing
 
-{% include image-gallery.html images="Trace.png, GroundPlane.png" height="400" %} 
+{% include image-gallery.html images="" height="400" %} 
 
 **Highlights:**
 - Independently manufactured the board using an LPKF Protomat circuit board plotter  
@@ -37,7 +37,7 @@ Mechanical stability was considered by adding holes to secure the cable to the b
 
 ## Final Product
 
-{% include image-gallery.html images="3Dpcb.png" height="400" %} 
+{% include image-gallery.html images="USB_Current_Monitor_realclose.png, USB_Current_Monitor_realbot.png, USB_Current_Monitor_realtop.png" height="400" %} 
 
 **Highlights:**
 - Added wires to easily connect the board to a lab power analyzer, following best practices (used different lengths for power and ground wires to prevent accidental shorts)  
