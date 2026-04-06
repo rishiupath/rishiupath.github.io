@@ -8,7 +8,7 @@ skills:
   - Circuit Pro
   - Soldering (wires, SMD components)
 
-main-image: /USB_Current_Monitor_realbot.jpg
+main-image: /DRS_ALL.png
 ---
 
 ## Design
