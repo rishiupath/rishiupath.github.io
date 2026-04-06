@@ -1,6 +1,6 @@
 ---
 layout: post
-title: USB Current Monitor
+title: Rover Motor Emergency Remote Stop
 description: Designed and manufactured 4 USB cable monitoring boards that enable logging USB current and voltage using an external power analyzer. Created for testing USB-C electronic devices during my time as a hardware engineering co-op at NETGEAR.
 skills: 
   - Altium Designer
@@ -13,7 +13,7 @@ main-image: /USB_Current_Monitor_realbot.jpg
 
 ## Design
 
-{% include image-gallery.html images="USB_Current_Sensor_Schematic.png" height="500" %} 
+{% include image-gallery.html images="DRS_ALL.png" height="500" %} 
 
 The board includes three user-accessible terminals. The main terminal is for USB current measurement, which uses the Kelvin (4-wire) resistance measurement method. This separates the measurement path from the current-carrying path, reducing voltage loss in the sensing circuit. A low-pass RC filter is also included to reduce high-frequency noise from the power supply.  
 
