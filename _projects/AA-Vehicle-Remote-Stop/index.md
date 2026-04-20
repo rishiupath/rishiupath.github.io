@@ -33,11 +33,11 @@ The receiver module's main purpose is to receive the shut off command from the r
 
 ### Schematics
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
-  <img src="Receiver_Power.png" style="width: 100%; height: auto;" />
-  <img src="Receiver_MCU.png" style="width: 100%; height: auto;" />
+  <img src="/projects/AA-Vehicle-Remote-Stop/Receiver_Power.png" style="width: 100%; height: auto;" />
+  <img src="/projects/AA-Vehicle-Remote-Stop/Receiver_MCU.png" style="width: 100%; height: auto;" />
 </div>
 <div style="margin-bottom: 16px;">
-  <img src="Receiver_Peripherals.png" style="width: 49%; height: auto;" />
+  <img src="/projects/AA-Vehicle-Remote-Stop/Receiver_Peripherals.png" style="width: 49%; height: auto;" />
 </div>
 
 ### PCB Layout
@@ -70,12 +70,12 @@ The transmitter module's purpose is to send the shut off command to the receiver
 
 ### Schematics
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
-  <img src="Transmitter_Power1.png" style="width: 100%; height: auto;" />
-  <img src="Transmitter_Power2.png" style="width: 100%; height: auto;" />
+  <img src="/projects/AA-Vehicle-Remote-Stop/Transmitter_Power1.png" style="width: 100%; height: auto;" />
+  <img src="/projects/AA-Vehicle-Remote-Stop/Transmitter_Power2.png" style="width: 100%; height: auto;" />
 </div>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
-  <img src="Transmitter_MCU.png" style="width: 100%; height: auto;" />
-  <img src="Transmitter_Peripherals.png" style="width: 100%; height: auto;" />
+  <img src="/projects/AA-Vehicle-Remote-Stop/Transmitter_MCU.png" style="width: 100%; height: auto;" />
+  <img src="/projects/AA-Vehicle-Remote-Stop/Transmitter_Peripherals.png" style="width: 100%; height: auto;" />
 </div>
 
 ### PCB Layout
