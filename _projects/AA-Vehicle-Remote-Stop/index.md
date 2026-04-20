@@ -29,39 +29,42 @@ The system consists of 3 modules. The **transmitter module** is held by the oper
 
 ## Receiver Module
 {% include image-gallery.html images="Receiver_Block.png" height="400" %}
-The receiver is powered from the rover's 24 V LiPo battery, stepped down to 3.3 V via a buck converter and LDO. A power mux prevents accidental back-feeding between USB and battery during development. Key components include an STM32 microcontroller, RN2903 LoRa module with antenna, USB for firmware flashing, CAN FD for optional integration with the rover's main bus, and 6 GPIO outputs to the switch modules.
+The receiver module's main purpose is to receive the shut off command from the remote operator and set signals to the 6 switch modules. It is powered from the rover's 24 V LiPo battery, stepped down to 3.3 V via a buck converter and LDO. A power mux prevents accidental back-feeding between USB and battery during development. Key components include an STM32 microcontroller, RN2903 LoRa module with antenna, USB for firmware flashing, CAN FD for optional integration with the rover's main bus, and 6 GPIO outputs to the switch modules.
 
 ### Schematics
-{% include image-gallery.html images="" height="400" %}
+{% include image-gallery.html images="Receiver_Power.png, Receiver_MCU.png, Receiver_Peripherals.png" height="400" %}
 ### PCB Layout
-{% include image-gallery.html images="" height="400" %}
+{% include image-gallery.html images="Receiver_Layout.png" height="400" %}
+4 Layer Stackup: SIG, GND, PWR, SIG (GND and PWR not depicted)
 ### PCB 3D
-{% include image-gallery.html images="" height="400" %}
+{% include image-gallery.html images="DRS_Receiver.png" height="400" %}
 
 ---
 
 ## Switch Module
 {% include image-gallery.html images="Switch_Block.png" height="400" %}
-Each switch module sits between the power distribution board and a motor driver, interrupting the DC supply rail rather than the motor's 3-phase output — simplifying high-current switching. The core is an SPDT relay rated for high-current DC motor loads. A TVS diode suppresses inductive voltage spikes when the supply is cut, and a bleed resistor dissipates stored motor energy to slow coasting. The relay coil is powered directly from the 24 V input and switched via a BJT controlled by the wired signal from the receiver module.
+The switch module's purpose is to cutoff the power supply to a motor safely and reliably. There is one switch module for each of the rover's 6 BLDC motors. Each switch module sits between the power distribution board and a motor driver, interrupting the DC supply rail rather than the motor's 3-phase output — simplifying high-current switching. The core is an SPDT relay rated for high-current DC motor loads. A TVS diode suppresses inductive voltage spikes when the supply is cut, and a bleed resistor dissipates stored motor energy to slow coasting. The relay coil is powered directly from the 24 V input and switched via a BJT controlled by the wired signal from the receiver module.
 
 ### Schematics
-{% include image-gallery.html images="" height="400" %}
+{% include image-gallery.html images="Switch_Schematic.png" height="400" %}
 ### PCB Layout
-{% include image-gallery.html images="" height="400" %}
+{% include image-gallery.html images="Switch_Layout.png" height="400" %}
+2 Layer Stackup: SIG, GND (GND not depicted)
 ### PCB 3D
-{% include image-gallery.html images="" height="400" %}
+{% include image-gallery.html images="DRS_Switch.png" height="400" %}
 
 ---
 
 ## Transmitter Module
-The transmitter is handheld and operator-carried. It accepts power from either 5× AA batteries or USB-C, managed through a power mux for seamless input switching. Reverse polarity protection is implemented with a P-channel MOSFET. Battery level is measured via ADC voltage sampling through a switched resistor divider (NMOS-gated) to minimize quiescent current, with ratiometric correction using the STM32's internal VREFINT reference. The module includes a LoRa radio and antenna, an OLED display showing system status, 6 individual motor-stop buttons, and 1 main stop button.
+The transmitter module's purpose is to send the shut off command to the receiver quickly and reliably whenever the operator presses the shut off button. It accepts power from either 5× AA batteries or USB-C, managed through a power mux for seamless input switching. Reverse polarity protection is implemented with a P-channel MOSFET. Battery level is measured via ADC voltage sampling through a switched resistor divider (NMOS-gated) to minimize quiescent current, with ratiometric correction using the STM32's internal VREFINT reference. The module includes a LoRa radio and antenna, an OLED display showing system status, 6 individual motor-stop buttons, and 1 main stop button.
 
 ### Schematics
-{% include image-gallery.html images="" height="400" %}
+{% include image-gallery.html images="Transmitter_Power1.png, Transmitter_Power2.png, Transmitter_MCU.png, Transmitter_Peripherals.png" height="400" %}
 ### PCB Layout
-{% include image-gallery.html images="" height="400" %}
+{% include image-gallery.html images="Transmitter_Layout.png" height="400" %}
+4 Layer Stackup: SIG, GND, PWR, SIG (GND and PWR not depicted)
 ### PCB 3D
-{% include image-gallery.html images="" height="400" %}
+{% include image-gallery.html images="DRS_Transmitter.png" height="400" %}
 
 ---
 
