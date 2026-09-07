@@ -5,15 +5,13 @@ title: Intelligent Rover Power Distribution System
 description: Designed, assembled, and deployed a 3-board intelligent power distribution system for UBC Rover, regulating and distributing 24 V, 18 V, 12 V, and 5 V rails with high-current protection, current sensing, and STM32-based monitoring.
 skills:
 
-* Altium Designer
-* Power Electronics
-* High-Current PCB Design
-* Buck Converters
-* STM32
-* ADC, UART, CAN FD
-* Power Monitoring
-* Circuit Protection
-* PCB Assembly & Reflow
+- Altium Designer
+- Power Electronics
+- High-Current PCB Design
+- Buck Converters
+- STM32
+- ADC, UART, CAN FD
+- PCB Assembly & Reflow
   main-image: /PDB_ALL.png
 
 ---
