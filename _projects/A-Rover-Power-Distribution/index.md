@@ -121,8 +121,9 @@ Current monitoring is performed using **TMCS1123 Hall-effect current sensors**, 
 ### Schematics
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+  <img src="/projects/POWER-DISTRIBUTION/PDB1_Power.png" style="width: 100%; height: auto;" />
   <img src="/projects/POWER-DISTRIBUTION/PDB1_MCU.png" style="width: 100%; height: auto;" />
-  <img src="/projects/POWER-DISTRIBUTION/PDB1_Sensing.png" style="width: 100%; height: auto;" />
+  <img src="/projects/POWER-DISTRIBUTION/PDB1_Connectors.png" style="width: 100%; height: auto;" />
 </div>
 
 ### PCB Layout
@@ -160,8 +161,9 @@ Protection remained part of the regulator design as well. The regulator output, 
 ### Schematics
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+  <img src="/projects/POWER-DISTRIBUTION/PDB2_Power.png" style="width: 100%; height: auto;" />
   <img src="/projects/POWER-DISTRIBUTION/PDB2_MCU.png" style="width: 100%; height: auto;" />
-  <img src="/projects/POWER-DISTRIBUTION/PDB2_Sensing.png" style="width: 100%; height: auto;" />
+  <img src="/projects/POWER-DISTRIBUTION/PDB2_Connectors.png" style="width: 100%; height: auto;" />
 </div>
 
 ### PCB Layout
@@ -195,8 +197,9 @@ The same safety philosophy used on the higher-voltage boards was applied to PDB3
 ### Schematics
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+  <img src="/projects/POWER-DISTRIBUTION/PDB3_Power.png" style="width: 100%; height: auto;" />
   <img src="/projects/POWER-DISTRIBUTION/PDB3_MCU.png" style="width: 100%; height: auto;" />
-  <img src="/projects/POWER-DISTRIBUTION/PDB3_Sensing.png" style="width: 100%; height: auto;" />
+  <img src="/projects/POWER-DISTRIBUTION/PDB3_Connectors.png" style="width: 100%; height: auto;" />
 </div>
 
 ### PCB Layout
