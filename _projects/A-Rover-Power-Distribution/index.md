@@ -9,7 +9,7 @@ skills:
 - Buck Converters
 - STM32
 - ADC, UART, CAN FD
-- PCB Assembly & Reflow
+- PCB Assembly and Reflow
   main-image: /PDB_ALL.png
 ---
 
