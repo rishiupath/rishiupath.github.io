@@ -10,7 +10,7 @@ skills:
 - STM32
 - ADC, UART, CAN FD
 - PCB Assembly and Reflow
-  main-image: /PDB_ALL.png
+main-image: /PDB_ALL.png
 ---
 
 ## Purpose
