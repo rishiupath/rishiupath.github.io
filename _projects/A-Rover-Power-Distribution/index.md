@@ -203,6 +203,10 @@ A **TMCS1108 Hall-effect current sensor** measures total 5 V rail consumption, w
 
 {% include image-gallery.html images="PDB3_Layout.png, PDB3_Layout_back.png" height="450" %}
 
+<p style="color: #b0b0b0; font-size: 14px; margin-top: 6px;">
+  <strong>4-Layer Stackup:</strong> Top — 1 oz Signal/Power, Inner 1 — 0.5 oz GND, Inner 2 — 0.5 oz GND, Bottom — 1 oz Signal/Power
+</p>
+
 ### PCB 3D
 
 {% include image-gallery.html images="PDB3_3D.png, PDB3_3D_back.png" height="400" %}
@@ -213,17 +217,17 @@ A **TMCS1108 Hall-effect current sensor** measures total 5 V rail consumption, w
 
 After completing schematic design and PCB layout, the three boards were fabricated and I **personally assembled the hardware**, including component placement and reflow soldering.
 
-{% include image-gallery.html images="PDB_Assembly.png" height="400" %}
+{% include image-gallery.html images="PDB_Assembly.jpeg" height="400" %}
 
 Bring-up was performed incrementally to reduce the risk of damaging the boards or downstream rover electronics. Power rails were validated before connecting loads, followed by testing of the STM32s, voltage-sensing circuitry, current sensors, and communication interfaces.
 
 This process allowed hardware and firmware issues to be isolated before the boards were installed into the rover.
 
-{% include image-gallery.html images="PDB_Complete.png" height="400" %}
+{% include image-gallery.html images="PDB_Complete.jpeg" height="400" %}
 
 The completed boards were then integrated into the rover and tested with the actual downstream electrical systems they were designed to power.
 
-{% include image-gallery.html images="PDB_Integrate.png" height="400" %}
+{% include image-gallery.html images="PDB_Integrate.jpeg" height="400" %}
 ---
 
 ## Embedded Firmware
