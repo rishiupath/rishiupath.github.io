@@ -124,7 +124,7 @@ Current monitoring is performed using TMCS1123 Hall-effect current sensors, sele
 
 ### PCB Layout
 
-{% include image-gallery.html images="PDB1_Layout.png,PDB1_Layout_back.png" height="450" %}
+{% include image-gallery.html images="PDB1_Layout.png, PDB1_Layout_back.png" height="450" %}
 
 <p style="color: #b0b0b0; font-size: 14px; margin-top: 6px;">
   <strong>4-Layer Stackup:</strong> Top — 2 oz Signal/Power, Inner 1 — 1 oz GND, Inner 2 — 1 oz GND, Bottom — 2 oz Signal/Power
@@ -133,7 +133,7 @@ Current monitoring is performed using TMCS1123 Hall-effect current sensors, sele
 
 ### PCB 3D
 
-{% include image-gallery.html images="PDB1_3D.png,PDB1_3D_back.png" height="400" %}
+{% include image-gallery.html images="PDB1_3D.png, PDB1_3D_back.png" height="400" %}
 
 ---
 
@@ -169,7 +169,7 @@ Protection remained part of the regulator design as well. The regulator output, 
 
 ### PCB Layout
 
-{% include image-gallery.html images="PDB2_Layout.png,PDB2_Layout_back.png" height="450" %}
+{% include image-gallery.html images="PDB2_Layout.png, PDB2_Layout_back.png" height="450" %}
 
 <p style="color: #b0b0b0; font-size: 14px; margin-top: 6px;">
   <strong>4-Layer Stackup:</strong> Top — 1 oz Signal/Power, Inner 1 — 0.5 oz GND, Inner 2 — 0.5 oz GND, Bottom — 1 oz Signal/Power
@@ -177,7 +177,7 @@ Protection remained part of the regulator design as well. The regulator output, 
 
 ### PCB 3D
 
-{% include image-gallery.html images="PDB2_3D.png,PDB2_3D_back.png" height="400" %}
+{% include image-gallery.html images="PDB2_3D.png, PDB2_3D_back.png" height="400" %}
 
 ---
 
@@ -201,11 +201,11 @@ A **TMCS1108 Hall-effect current sensor** measures total 5 V rail consumption, w
 
 ### PCB Layout
 
-{% include image-gallery.html images="PDB3_Layout.png,PDB3_Layout_back.png" height="450" %}
+{% include image-gallery.html images="PDB3_Layout.png, PDB3_Layout_back.png" height="450" %}
 
 ### PCB 3D
 
-{% include image-gallery.html images="PDB3_3D.png,PDB3_3D_back.png" height="400" %}
+{% include image-gallery.html images="PDB3_3D.png, PDB3_3D_back.png" height="400" %}
 
 ---
 
