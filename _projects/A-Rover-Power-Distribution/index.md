@@ -223,7 +223,7 @@ This process allowed hardware and firmware issues to be isolated before the boar
 
 The completed boards were then integrated into the rover and tested with the actual downstream electrical systems they were designed to power.
 
-{% include image-gallery.html images="PDB_Integrated.png" height="400" %}
+{% include image-gallery.html images="PDB_Integrate.png" height="400" %}
 ---
 
 ## Embedded Firmware
