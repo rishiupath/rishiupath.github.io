@@ -15,7 +15,8 @@ main-image: /PDB_ALL.png
 
 ## Purpose
 
-The rover contains motors, computers, cameras, networking equipment, sensors, and other electronics that require several different supply voltages while drawing currents ranging from milliamps to tens of amps. I worked on the redesign of the rover's central power distribution system to safely distribute power from its 7S3P LiPo battery while providing voltage regulation, circuit protection, current sensing, and electrical monitoring.
+The rover contains motors, computers, cameras, networking equipment, sensors, and other electronics that require several different supply voltages while drawing currents ranging from milliamps to tens of amps. I worked on the redesign of the rover's central power distribution system to safely distribute power from its **7S3P LiPo battery** while providing voltage regulation, circuit protection, current sensing, and system monitoring. The design uses **custom DC-DC buck converters** to generate the rover's regulated 18 V, 12 V, and 5 V rails, **Hall-effect current sensors** for isolated current measurement, and onboard **STM32 microcontrollers** to sample voltage and current through their ADCs and support **UART** and **CAN FD** communication.
+
 
 The system is split across **3 custom power distribution boards (PDBs)** supporting the rover's 24V, 18V, 12V, and 5V electrical systems.
 
@@ -123,7 +124,7 @@ Current monitoring is performed using TMCS1123 Hall-effect current sensors, sele
 
 ### PCB Layout
 
-{% include image-gallery.html images="PDB1_Layout.png,PDB1_Layout_back.png " height="450" %}
+{% include image-gallery.html images="PDB1_Layout.png,PDB1_Layout_back.png" height="450" %}
 
 <p style="color: #b0b0b0; font-size: 14px; margin-top: 6px;">
   <strong>4-Layer Stackup:</strong> Top — 2 oz Signal/Power, Inner 1 — 1 oz GND, Inner 2 — 1 oz GND, Bottom — 2 oz Signal/Power
@@ -132,7 +133,7 @@ Current monitoring is performed using TMCS1123 Hall-effect current sensors, sele
 
 ### PCB 3D
 
-{% include image-gallery.html images="PDB1_3D.png, PDB1_3D_back" height="400" %}
+{% include image-gallery.html images="PDB1_3D.png,PDB1_3D_back.png" height="400" %}
 
 ---
 
@@ -140,7 +141,7 @@ Current monitoring is performed using TMCS1123 Hall-effect current sensors, sele
 
 {% include image-gallery.html images="PDB2_Block.png" height="400" %}
 
-PDB2 generates and distributes the rover's **18 V and 12 V rails**. Because both rails are derived from the main battery, this board combines high-current power distribution with custom switching regulators.
+PDB2 generates and distributes the rover's **18 V and 12 V rails**.
 
 Two **LM5145 synchronous buck converter** stages generate the 18 V and 12 V supplies. Each regulator is designed for up to **20 A**, allowing the board to support the rover's computing and peripheral systems.
 
@@ -161,18 +162,22 @@ Protection remained part of the regulator design as well. The regulator output, 
 ### Schematics
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
-  <img src="/projects/POWER-DISTRIBUTION/PDB2_Power.png" style="width: 100%; height: auto;" />
-  <img src="/projects/POWER-DISTRIBUTION/PDB2_MCU.png" style="width: 100%; height: auto;" />
-  <img src="/projects/POWER-DISTRIBUTION/PDB2_Connectors.png" style="width: 100%; height: auto;" />
+  <img src="/projects/A-Rover-Power-Distribution/PDB2_Power.png" style="width: 100%; height: auto;" />
+  <img src="/projects/A-Rover-Power-Distribution/PDB2_MCU.png" style="width: 100%; height: auto;" />
+  <img src="/projects/A-Rover-Power-Distribution/PDB2_Connectors.png" style="width: 100%; height: auto;" />
 </div>
 
 ### PCB Layout
 
-{% include image-gallery.html images="PDB2_Layout.png" height="450" %}
+{% include image-gallery.html images="PDB2_Layout.png,PDB2_Layout_back.png" height="450" %}
+
+<p style="color: #b0b0b0; font-size: 14px; margin-top: 6px;">
+  <strong>4-Layer Stackup:</strong> Top — 1 oz Signal/Power, Inner 1 — 0.5 oz GND, Inner 2 — 0.5 oz GND, Bottom — 1 oz Signal/Power
+</p>
 
 ### PCB 3D
 
-{% include image-gallery.html images="PDB2_3D.png" height="400" %}
+{% include image-gallery.html images="PDB2_3D.png,PDB2_3D_back.png" height="400" %}
 
 ---
 
@@ -186,54 +191,39 @@ Like PDB2, the board uses an **LM5145 synchronous buck converter** to efficientl
 
 A **TMCS1108 Hall-effect current sensor** measures total 5 V rail consumption, while the rail is distributed across multiple independently fused output channels.
 
-Although the rail voltage is lower, the design still needs to support several digital and electromechanical loads simultaneously while maintaining a stable 5 V supply during changing load conditions.
-
-### Power Regulation
-
-{% include image-gallery.html images="PDB3_Power.png" height="400" %}
-
-The same safety philosophy used on the higher-voltage boards was applied to PDB3. Individual output fuses were selected around downstream load requirements, while connector, conductor, and PCB current capacities were checked to ensure the protection device remained the intentional weakest point in the circuit.
-
 ### Schematics
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
-  <img src="/projects/POWER-DISTRIBUTION/PDB3_Power.png" style="width: 100%; height: auto;" />
-  <img src="/projects/POWER-DISTRIBUTION/PDB3_MCU.png" style="width: 100%; height: auto;" />
-  <img src="/projects/POWER-DISTRIBUTION/PDB3_Connectors.png" style="width: 100%; height: auto;" />
+  <img src="/projects/A-Rover-Power-Distribution/PDB3_Power.png" style="width: 100%; height: auto;" />
+  <img src="/projects/A-Rover-Power-Distribution/PDB3_MCU.png" style="width: 100%; height: auto;" />
+  <img src="/projects/A-Rover-Power-Distribution/PDB3_Connectors.png" style="width: 100%; height: auto;" />
 </div>
 
 ### PCB Layout
 
-{% include image-gallery.html images="PDB3_Layout.png" height="450" %}
+{% include image-gallery.html images="PDB3_Layout.png,PDB3_Layout_back.png" height="450" %}
 
 ### PCB 3D
 
-{% include image-gallery.html images="PDB3_3D.png" height="400" %}
+{% include image-gallery.html images="PDB3_3D.png,PDB3_3D_back.png" height="400" %}
 
 ---
 
-## Protection & Power Monitoring
+## Fabrication, Assembly & Bring-Up
 
-A major goal of the redesign was to make the rover's power system both **safer and easier to debug**.
+After completing schematic design and PCB layout, the three boards were fabricated and I **personally assembled the hardware**, including component placement and reflow soldering.
 
-Every downstream circuit is protected by an onboard fuse selected based on its expected load as well as the current capacity of the associated connectors, wiring, and PCB traces. This ensures that excessive current is interrupted before exceeding the safe continuous rating of the power path.
+{% include image-gallery.html images="PDB_Assembly.png" height="400" %}
 
-The three boards also include circuitry for distributed electrical monitoring. Each contains an STM32 microcontroller with analog measurement circuitry for monitoring rail voltage and current.
+Bring-up was performed incrementally to reduce the risk of damaging the boards or downstream rover electronics. Power rails were validated before connecting loads, followed by testing of the STM32s, voltage-sensing circuitry, current sensors, and communication interfaces.
 
-The measurement system includes:
+This process allowed hardware and firmware issues to be isolated before the boards were installed into the rover.
 
-<ul style="color: #e0e0e0; line-height: 1.6; font-size: 16px;">
-  <li>TMCS1123 current sensors for the high-current 24 V system</li>
-  <li>TMCS1108 current sensors for the 18 V, 12 V, and 5 V rails</li>
-  <li>Resistor-divider networks for ADC voltage measurement</li>
-  <li>STM32 ADCs for local voltage and current acquisition</li>
-  <li>UART and CAN FD hardware interfaces for communication and future integration with the rover's onboard compute</li>
-</ul>
+{% include image-gallery.html images="PDB_Complete.png" height="400" %}
 
-The measurement hardware provides visibility into the electrical state of the rover during development and hardware bring-up, while the communication interfaces provide a path for future integration into the rover's central telemetry system.
+The completed boards were then integrated into the rover and tested with the actual downstream electrical systems they were designed to power.
 
-{% include image-gallery.html images="PDB_Telemetry_Block.png" height="400" %}
-
+{% include image-gallery.html images="PDB_Integrated.png" height="400" %}
 ---
 
 ## Embedded Firmware
@@ -259,62 +249,6 @@ Importantly, the communication system is supplementary to the boards' primary po
 
 ---
 
-## Fabrication, Assembly & Bring-Up
-
-After completing schematic design and PCB layout, the three boards were fabricated and I **personally assembled the hardware**, including component placement and reflow soldering.
-
-Bring-up was performed incrementally to reduce the risk of damaging the boards or downstream rover electronics. Power rails were validated before connecting loads, followed by testing of the STM32s, voltage-sensing circuitry, current sensors, and communication interfaces.
-
-This process allowed hardware and firmware issues to be isolated before the boards were installed into the rover.
-
-{% include image-gallery.html images="PDB_Assembly.png" height="400" %}
-
-The completed boards were then integrated into the rover and tested with the actual downstream electrical systems they were designed to power.
-
----
-
-## Design Challenges
-
-### High-Current PCB Layout
-
-The 24 V board distributes power to some of the rover's largest electrical loads, requiring significantly wider copper paths than a typical embedded PCB.
-
-Instead of sizing PCB traces in isolation, I considered the complete current path: expected load current, fuse rating, sensor capacity, copper width, connector rating, wire gauge, and operating temperature. This was particularly important because the safety of the circuit is determined by its lowest-rated component.
-
-### High-Current Switching Regulators
-
-The 18 V, 12 V, and 5 V systems required efficient conversion from the rover battery while supporting high-current loads.
-
-The LM5145 regulator stages required careful component selection and PCB placement to minimize high-frequency switching loops, manage thermal performance, maintain stable feedback, and prevent switching noise from interfering with the board's analog measurements.
-
-### Measurement Across Multiple Voltage Rails
-
-The boards monitor rails ranging from 5 V to the full battery voltage while the STM32 ADC operates from 3.3 V.
-
-Each voltage-sensing circuit therefore required a different resistor-divider ratio to keep the ADC input within its safe range while maintaining useful measurement resolution. Current-sensor outputs also had to be converted in firmware using the sensitivity of each sensor.
-
-### Safety Compliance
-
-The power distribution system is one of the rover's most safety-critical electrical subsystems, so design decisions could not be based only on whether the circuit functioned electrically.
-
-Fuse ratings, conductor capacity, connector capacity, thermal derating, insulation, and system-level fault behavior all had to be considered against the CIRC safety requirements.
-
-Maintaining detailed block diagrams throughout the design also forced the complete power path to be reviewed at a system level. Sending these diagrams to CIRC Safety Judges for feedback before fabrication provided an additional review step before committing the designs to hardware.
-
-### Hardware Bring-Up
-
-Because the system directly interfaces with the rover battery and several expensive downstream devices, first power-on had to be approached carefully.
-
-I brought up the hardware in stages, verifying the power-conversion circuitry and individual rails before connecting downstream loads. The STM32s, sensing circuitry, and communication interfaces were then tested independently before installing the boards into the rover.
-
-### Competition Timeline
-
-The primary requirement for competition was a safe and reliable power system. I prioritized completing, validating, and integrating the power-distribution hardware before expanding the firmware feature set.
-
-This meant the rover entered competition with fully functional power distribution and protection, while CAN FD telemetry integration remained incomplete. Keeping the monitoring architecture separate from the core power path meant this unfinished feature did not affect the reliability of the rover's electrical system.
-
----
-
 ## Competition Deployment
 
 The completed power distribution system was installed in the rover and used during our **August 2026 competition**.
@@ -322,7 +256,5 @@ The completed power distribution system was installed in the rover and used duri
 All three custom PDBs operated successfully throughout the event, providing the required **24 V, 18 V, 12 V, and 5 V rails** to the rover's drivetrain, robotic arm, computers, networking equipment, cameras, sensors, and other electronics.
 
 **No downstream devices experienced issues receiving power from the PDB system during competition.**
-
-This competition deployment provided the final system-level validation of the boards beyond bench testing: hardware I designed, assembled, and brought up was used as the rover's central power-distribution system in the field.
 
 The remaining development work is primarily firmware-focused, with the next step being completion of the **CAN FD interface and integration of voltage/current telemetry with the rover's onboard computing system**.
