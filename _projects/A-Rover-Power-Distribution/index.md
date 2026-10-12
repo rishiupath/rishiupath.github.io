@@ -119,7 +119,7 @@ Current monitoring is performed using TMCS1123 Hall-effect current sensors, sele
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
   <img src="/projects/A-Rover-Power-Distribution/PDB1_Power.png" style="width: 100%; height: auto;" />
   <img src="/projects/A-Rover-Power-Distribution/PDB1_MCU.png" style="width: 100%; height: auto;" />
-  <img src="/projects/A-Rover-Power-Distribution/PDB1_Connectors.png" style="width: 100%; height: auto;" />
+  <img src="/projects/A-Rover-Power-Distribution/PDB1_Conectors.png" style="width: 100%; height: auto;" />
 </div>
 
 ### PCB Layout
